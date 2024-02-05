@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fullFrame"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="#4caf50"
+    tools:context="com.example.hp.notetaker.SplashActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/logos"
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageglobe"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/note700px" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/texts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="false"
+                android:gravity="center"
+                android:text="Note Taker"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:text="Developed by Rajat Badaria"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

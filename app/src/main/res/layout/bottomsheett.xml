@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:id="@+id/bottomsheet"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="?android:attr/actionBarSize"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/quicknote"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_height="wrap_content">
+
+
+     <TextView
+        android:id="@+id/expand"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Quick Note!"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkPrimary"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            app:contentPadding="10dp"
+            app:cardBackgroundColor="#444445"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_height="match_parent">
+     <EditText
+
+        android:id="@+id/quick_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Note Title"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/quick_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="top"
+        android:hint="Start Typing!"
+        android:textColorHint="#999"
+        android:scrollHorizontally="false"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/quicksave"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+        android:background="@color/darkbg"
+        android:text="Save"
+        android:layout_marginLeft="50dp"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/quickdismiss"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:background="@color/darkbg"
+        android:text="Dismiss"
+        android:layout_marginLeft="5dp"
+        android:textColor="#fff"
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
